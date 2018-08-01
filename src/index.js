@@ -11,7 +11,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 var cube;
-
+var tt = 0
+var direction = 1
 var t = 0;
 var u = 0;
 var v = 0;
@@ -109,10 +110,16 @@ function draw() {
   light.color.b = gslider;
   light.color.r = Math.acos(v*Math.PI/maxt )
   t ++;
+  
   if (t > maxt){
-  	t = 0
+  	t = 0;
+        tt = tt + direction;
+	maxt = (20-tt)/20
   }
-  u++;
+	
+  if ((tt == 20) || (tt == 0)){
+	  direction = direction*-1
+  }
   if (u > maxu){
   	u = 0
   }
