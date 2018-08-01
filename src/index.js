@@ -114,7 +114,7 @@ function draw() {
   if (t > maxt){
   	t = 0;
         tt = tt + direction;
-	maxt = (20-tt)/20
+	maxt = maxt*(20-tt)/20
   }
 	
   if ((tt == 20) || (tt == 0)){
@@ -125,7 +125,7 @@ function draw() {
   }
 
   if (t == 0){
-    window.navigator.vibrate(60);
+    window.navigator.vibrate(40);
     console.log('vibrating now for bounce');
     
   } 
