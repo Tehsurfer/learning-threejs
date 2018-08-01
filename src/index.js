@@ -116,11 +116,6 @@ function draw() {
   if (u > maxu){
   	u = 0
   }
-	 if (t == 6){
-    navigator.vibrate(1000);
-    console.log('vibrating now for t');
-  }
-
 
   if (cube.position.x < 2){
     navigator.vibrate(100);
