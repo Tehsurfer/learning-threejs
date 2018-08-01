@@ -1,0 +1,30 @@
+{
+  "name": "learning-threejs",
+  "version": "1.0.0",
+  "description": "a little test running threejs\r Link to the test...\r https://app.netlify.com/sites/sad-ramanujan-9aef04/overview",
+  "main": "index.js",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "jquery": "^3.3.1",
+    "three.js": "^0.77.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tehsurfer/learning-threejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tehsurfer/learning-threejs/issues"
+  },
+  "homepage": "https://github.com/Tehsurfer/learning-threejs#readme"
+}
