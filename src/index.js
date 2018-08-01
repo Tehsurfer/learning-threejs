@@ -103,7 +103,7 @@ window.addEventListener('mouseup', function(event){
 function draw() {
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
-  cube.position.y = maxt*Math.sin(t*Math.PI/maxt)
+  cube.position.y = Math.sin(t*Math.PI/maxt)*maxt/100
   cube.position.x = Math.cos(u*Math.PI*2/maxu)
   renderer.render(scene, camera);
   light.color.g = bslider;
