@@ -117,7 +117,7 @@ function draw() {
   	u = 0
   }
 
-  if (cube.position.x < 2){
+  if (cube.position.y < 2){
     window.navigator.vibrate(60);
     console.log('vibrating now for bounce');
     
