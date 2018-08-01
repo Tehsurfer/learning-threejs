@@ -33,7 +33,7 @@ spotLight.position.set( 100, 1000, 1000 );
 spotLight.castShadow = true;
 scene.add(spotLight);
 
-loader.load( 'https://upload.wikimedia.org/wikipedia/als/e/e3/Firefox-logo.svg', function (texture) {
+loader.load( 'https://raw.githubusercontent.com/Tehsurfer/learning-threejs/master/Firefox-logo.svg.png', function (texture) {
 	texture.wrapS = THREE.RepeatWrapping;
 	texture.wrapT = THREE.RepeatWrapping;
 	// texture.repeat.set(2, 2);
