@@ -117,7 +117,7 @@ function draw() {
   	u = 0
   }
 
-  if ((t == 0) || (t == maxt/2)){
+  if (t == 0){
     window.navigator.vibrate(60);
     console.log('vibrating now for bounce');
     
