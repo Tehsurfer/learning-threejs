@@ -10,10 +10,6 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-var image = new Image();
-image.onload = function() { }
-image.src = 'https://raw.githubusercontent.com/mdn/learning-area/master/javascript/apis/drawing-graphics/threejs-cube/metal003.png';
-
 var cube;
 
 var t = 0;
@@ -24,6 +20,7 @@ var maxu = 300;
 var maxv = 5000;
 
 var loader = new THREE.TextureLoader();
+loader.setCrossOrigin( 'Anonymous');
 
 var light = new THREE.AmbientLight('rgb(0,0,255)'); // soft white light
 scene.add(light);
