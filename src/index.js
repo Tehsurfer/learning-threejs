@@ -31,7 +31,7 @@ spotLight.position.set( 100, 1000, 1000 );
 spotLight.castShadow = true;
 scene.add(spotLight);
 
-loader.load( 'https://raw.githubusercontent.com/Tehsurfer/learning-threejs/master/texture.png', function (texture) {
+loader.load( 'https://raw.githubusercontent.com/Tehsurfer/learning-threejs/master/ryder.png', function (texture) {
 	texture.wrapS = THREE.RepeatWrapping;
 	texture.wrapT = THREE.RepeatWrapping;
 	// texture.repeat.set(2, 2);
